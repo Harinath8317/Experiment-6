@@ -1,0 +1,11 @@
+#include <stdio.h>
+float square (float num) {
+return num * num;
+}
+int main() {
+float num;
+printf("Input any number for square: ");
+scanf("%f", &num);
+printf("The square of %.2f is: %.2f\n", num, square(num));
+return 0;
+}
