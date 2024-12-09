@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+int number, i, sum = 0;
+printf("Enter a number: ");
+scanf("%d", &number);
+for (i = 1; i <= number; i++) {
+if (number % i == 0 && i % 2 != 0) {
+sum += i;
+}
+}
+printf("Sum of odd factors: %d\n", sum);
+return 0;
+}
